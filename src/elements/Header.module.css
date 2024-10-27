@@ -1,0 +1,14 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #2a4a00;
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#logo {
+  max-height: 80%;
+}

@@ -8,3 +8,14 @@
 .color_band:hover {
   min-width: 2.8rem;
 }
+@media only screen and (max-width: 600px) {
+  .color_band {
+    min-width: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .color_band {
+    min-width: 2rem;
+    margin-left: 1.8rem;
+  }
+}

@@ -8,13 +8,25 @@
 
 .main_body {
   background-color: #ffc34c;
-  min-width: 28rem;
-  height: 10rem;
+  min-width: 24rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border-radius: 2.6rem;
   box-shadow: 0 0 1.6rem #90ffec;
+}
+@media only screen and (max-width: 600px) {
+  .main_body {
+    min-width: 20rem;
+    height: 7.3rem;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .main_body {
+    min-width: 27rem;
+    height: 9rem;
+  }
 }
 
 .band_wrapper {

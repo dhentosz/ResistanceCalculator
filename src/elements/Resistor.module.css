@@ -7,14 +7,14 @@
 }
 
 .main_body {
-  background-color: #ffc34c;
+  background-color: var(--resistor_body_color);
   min-width: 24rem;
   height: 8rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border-radius: 2.6rem;
-  box-shadow: 0 0 1.6rem #90ffec;
+  box-shadow: 0 0 1.6rem var(--resistor_shadow);
 }
 @media only screen and (max-width: 600px) {
   .main_body {
@@ -45,10 +45,10 @@
 
 .pin {
   z-index: 1;
-  background-color: #000000;
+  background-color: var(--pin_color);
   width: 6rem;
   height: 0.66rem;
-  box-shadow: 0 0 0.6rem #90ffec;
+  box-shadow: 0 0 0.6rem var(--resistor_shadow);
 }
 .pin.left {
   border-top-left-radius: 1rem;

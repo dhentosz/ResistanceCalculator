@@ -4,7 +4,8 @@ export default function Header() {
   return (
     <>
       <div className={styles.header}>
-        <img src="src/assets/logo.png" alt="LOGO" id={styles.logo}></img>ResCalc
+        <img src="src/assets/logo.png" alt="LOGO" id={styles.logo}></img>
+        ResCalc
       </div>
     </>
   );

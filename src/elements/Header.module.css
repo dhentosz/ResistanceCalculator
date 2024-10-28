@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: #2a4a00;
+  background-color: light-dark(var(--lt_green), var(--drk_green));
   width: 100vw;
   height: 3rem;
   display: flex;

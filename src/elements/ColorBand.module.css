@@ -1,5 +1,5 @@
 .color_band {
-  background-color: #000000;
+  background-color: var(--band_color);
   min-width: 1.6rem;
   height: inherit;
   margin-left: 1.3rem;

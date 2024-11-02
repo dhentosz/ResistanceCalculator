@@ -4,4 +4,14 @@
 
 ### (React - Vite)
 
-toDo: band dropdowns to select colors, text fields to display output, program main logic, 3-5-6 band resistor pages.
+## toDo
+
+     adjust resistor size to promote larger colorButtons
+
+     style buttons and choose better colors
+
+     text fields to display output
+
+     program main logic
+
+     3-5-6 band resistor pages.

@@ -6,9 +6,7 @@
 
 ## toDo
 
-     adjust resistor size to promote larger colorButtons
-
-     style buttons and choose better colors
+     style buttons
 
      text fields to display output
 

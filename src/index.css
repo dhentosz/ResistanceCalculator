@@ -5,6 +5,18 @@
   --drk_green: #2a4a00;
   --lt_green: #68b800;
 
+  /* Resistor Band Colors */
+  --res_black: #000000;
+  --res_brown: #80461f;
+  --res_red: #ff0000;
+  --res_orange: #ff9900;
+  --res_yellow: #ffff00;
+  --res_green: #008000;
+  --res_blue: #0000ff;
+  --res_violet: #9400c5;
+  --res_grey: #808080;
+  --res_white: #ffffff;
+
   /* Other Colors */
   --resistor_body_color: light-dark(#ffb727, #ffc34c);
   --band_color: #000000;

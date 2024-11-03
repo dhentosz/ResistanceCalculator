@@ -6,8 +6,6 @@
 
 ## toDo
 
-     style buttons
-
      text fields to display output
 
      program main logic

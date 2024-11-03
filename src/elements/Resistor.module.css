@@ -8,13 +8,16 @@
 
 .main_body {
   background-color: var(--resistor_body_color);
+  border: 3px solid black;
   min-width: 24rem;
   height: 8rem;
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   border-radius: 2.6rem;
   box-shadow: 0 0 1.6rem var(--resistor_shadow);
+  transition: background-color 4s, box-shadow 3s;
 }
 @media only screen and (max-width: 600px) {
   .main_body {
@@ -49,6 +52,8 @@
   width: 6rem;
   height: 0.66rem;
   box-shadow: 0 0 0.6rem var(--resistor_shadow);
+
+  transition: box-shadow 3s;
 }
 .pin.left {
   border-top-left-radius: 1rem;

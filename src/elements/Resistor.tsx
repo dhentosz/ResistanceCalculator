@@ -1,5 +1,6 @@
 import styles from "./Resistor.module.css";
 import ColorBand from "./ColorBand";
+import Output from "./Output.tsx";
 
 export default function Resistor() {
   return (
@@ -18,6 +19,7 @@ export default function Resistor() {
         </div>
         <div className={`${styles.pin} ${styles.right}`}></div>
       </div>
+      <Output />
     </>
   );
 }

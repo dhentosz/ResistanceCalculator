@@ -1,0 +1,12 @@
+.data_wrapper {
+  background-color: light-dark(var(--lt_green), var(--drk_green));
+  border-radius: 2rem;
+  border: 0.1rem solid light-dark(var(--black), var(--neon_green_acct));
+  width: 13rem;
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s, color 2s, border-color 3s;
+}

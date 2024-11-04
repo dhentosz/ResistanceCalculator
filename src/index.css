@@ -2,8 +2,9 @@
   /* Main Color Palette */
   --black: #000000;
   --white: #ffffffeb;
-  --drk_green: #2a4a00d8;
-  --lt_green: #68b800d8;
+  --drk_green: #2a4a00d6;
+  --lt_green: #68b800d6;
+  --neon_green_acct: #12fe05d6;
 
   /* Resistor Band Colors */
   --res_black: #000000;
@@ -20,7 +21,7 @@
   /* Other Colors */
   --resistor_body_color: light-dark(#ffb727, #ffc34c);
   --band_color: #000000;
-  --resistor_shadow: light-dark(#006655, #31ffdd);
+  --resistor_shadow: light-dark(#056400, #12fe05);
   --pin_color: #000000;
 
   color-scheme: light dark;

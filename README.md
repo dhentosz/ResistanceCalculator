@@ -8,6 +8,4 @@
 
      create multiplier and tolerance bands
 
-     program main logic
-
      3-5-6 band resistor pages

@@ -12,6 +12,22 @@ export default function Resistor() {
   const [multiplier, setMultiplier] = useState(0);
   const [tolerance, setTolerance] = useState(0);
 
+  // Calculates the final output to be displayed.
+  function CalculateOutput(
+    fVal: number,
+    sVal: number,
+    mVal: number,
+    tVal: number
+  ) {
+    let basevalue = 10 * fVal + sVal;
+    let ohmRating = basevalue * mVal;
+
+    return ohmRating + "ohms " + tVal + "% tol";
+  }
+
+  // Calls CalculateOutput with state variables and stores into output variable.
+  let output = CalculateOutput(firstValue, secValue, multiplier, tolerance);
+
   return (
     <>
       <div className={styles.resistor_wrapper}>
@@ -28,12 +44,7 @@ export default function Resistor() {
         </div>
         <div className={`${styles.pin} ${styles.right}`}></div>
       </div>
-      <Output
-        first={firstValue}
-        sec={secValue}
-        multi={multiplier}
-        tol={tolerance}
-      />
+      <Output out={output} />
     </>
   );
 }

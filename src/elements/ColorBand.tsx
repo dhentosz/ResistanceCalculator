@@ -1,9 +1,8 @@
 import styles from "./ColorBand.module.css";
 import { useState } from "react";
 
-export default function ColorBand() {
+export default function ColorBand({ callback }) {
   const [bandColor, setBandColor] = useState("black");
-  const [bandValue, setBandValue] = useState(0);
 
   return (
     <div className={styles.color_band} id={bandColor}>
@@ -13,7 +12,7 @@ export default function ColorBand() {
           id={styles.black}
           onClick={() => {
             setBandColor(styles.black);
-            setBandValue(0);
+            callback(0);
           }}
         ></button>
         <button
@@ -21,7 +20,7 @@ export default function ColorBand() {
           id={styles.brown}
           onClick={() => {
             setBandColor(styles.brown);
-            setBandValue(1);
+            callback(1);
           }}
         ></button>
         <button
@@ -29,7 +28,7 @@ export default function ColorBand() {
           id={styles.red}
           onClick={() => {
             setBandColor(styles.red);
-            setBandValue(2);
+            callback(2);
           }}
         ></button>
         <button
@@ -37,7 +36,7 @@ export default function ColorBand() {
           id={styles.orange}
           onClick={() => {
             setBandColor(styles.orange);
-            setBandValue(3);
+            callback(3);
           }}
         ></button>
         <button
@@ -45,7 +44,7 @@ export default function ColorBand() {
           id={styles.yellow}
           onClick={() => {
             setBandColor(styles.yellow);
-            setBandValue(4);
+            callback(4);
           }}
         ></button>
         <button
@@ -53,7 +52,7 @@ export default function ColorBand() {
           id={styles.green}
           onClick={() => {
             setBandColor(styles.green);
-            setBandValue(5);
+            callback(5);
           }}
         ></button>
         <button
@@ -61,7 +60,7 @@ export default function ColorBand() {
           id={styles.blue}
           onClick={() => {
             setBandColor(styles.blue);
-            setBandValue(6);
+            callback(6);
           }}
         ></button>
         <button
@@ -69,7 +68,7 @@ export default function ColorBand() {
           id={styles.violet}
           onClick={() => {
             setBandColor(styles.violet);
-            setBandValue(7);
+            callback(7);
           }}
         ></button>
         <button
@@ -77,7 +76,7 @@ export default function ColorBand() {
           id={styles.grey}
           onClick={() => {
             setBandColor(styles.grey);
-            setBandValue(8);
+            callback(8);
           }}
         ></button>
         <button
@@ -85,7 +84,7 @@ export default function ColorBand() {
           id={styles.white}
           onClick={() => {
             setBandColor(styles.white);
-            setBandValue(9);
+            callback(9);
           }}
         ></button>
       </div>

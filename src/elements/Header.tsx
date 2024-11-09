@@ -1,3 +1,5 @@
+// Main Header component with logo, title and button to toggle between light/dark modes.
+
 import { useEffect, useRef } from "react";
 import styles from "./Header.module.css";
 
@@ -7,9 +9,9 @@ export default function Header() {
 
   useEffect(() => {
     const btn = btnRef.current; // pull current button element
-    let darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches; // checks if user system preference is dark and stores boolean.
+    let darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches; // checks if user system preference is dark and stores boolean
 
-    // listen for click on btn and toggle light/dark mode based on current state.
+    // listen for click on btn and toggle light/dark mode based on current state
     btn.addEventListener("click", () => {
       if (darkMode) {
         document.documentElement.style.setProperty("color-scheme", "light");

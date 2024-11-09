@@ -1,7 +1,15 @@
-import styles from "./ColorBand.module.css";
-import { useState } from "react";
+// Component to display current band color selected. Hides a list of buttons for color selections that is revealed upon hover.
 
-export default function ColorBand({ callback }) {
+import styles from "./ColorBand.module.css";
+import React, { useState } from "react";
+
+// Utilizes callback function prop to pass the current band value back to the parent Resistor component for calculation
+export default function ColorBand({
+  callback,
+}: {
+  callback: React.Dispatch<React.SetStateAction<number>>;
+}) {
+  // State var to hold currently selected band color. Is updated upon click of a color selection button
   const [bandColor, setBandColor] = useState("black");
 
   return (

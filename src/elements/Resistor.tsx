@@ -1,9 +1,12 @@
+// Main resistor component/UI. Displays color bands for users to interact with in order to choose band colors to calculate ohm rating. Displays Output component and passes necessary data to it.
+
 import styles from "./Resistor.module.css";
 import ColorBand from "./ColorBand";
 import Output from "./Output.tsx";
 import { useState } from "react";
 
 export default function Resistor() {
+  // Defines necessary state values for calculating ohm rating dependant on current color band colors
   const [firstValue, setFirstValue] = useState(0);
   const [secValue, setSecValue] = useState(0);
   const [multiplier, setMultiplier] = useState(0);

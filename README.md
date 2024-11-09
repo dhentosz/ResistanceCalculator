@@ -6,10 +6,6 @@
 
 ## toDo
 
-     * address type issues *
-
-     comment code
-
      create multiplier and tolerance bands
 
      program main logic

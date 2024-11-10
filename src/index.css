@@ -17,9 +17,11 @@
   --res_violet: #9400c5;
   --res_grey: #808080;
   --res_white: #ffffff;
+  --res_gold: gold;
+  --res_silver: #bfbfbf;
 
   /* Other Colors */
-  --resistor_body_color: light-dark(#ffb727, #ffc34c);
+  --resistor_body_color: light-dark(#ffb217, #ffbe3c);
   --band_color: #000000;
   --resistor_shadow: light-dark(#056400, #12fe05);
   --pin_color: #000000;

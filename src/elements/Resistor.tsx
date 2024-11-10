@@ -9,7 +9,7 @@ export default function Resistor() {
   // Defines necessary state values for calculating ohm rating dependant on current color band selections
   const [firstValue, setFirstValue] = useState(0);
   const [secValue, setSecValue] = useState(0);
-  const [multiplier, setMultiplier] = useState(0);
+  const [multiplier, setMultiplier] = useState(1);
   const [tolerance, setTolerance] = useState(0);
 
   // Calculates the final output to be displayed
@@ -25,10 +25,10 @@ export default function Resistor() {
     let ohmRating = basevalue * mVal;
 
     // Returns a string with formatted output including ohm rating and tolerance percentage
-    return ohmRating + "ohms " + tVal + "% tol";
+    return ohmRating + "ohms " + tVal + "% tolerance";
   }
 
-  // Calls CalculateOutput with state variables and stores into output variable
+  // Calls CalculateOutput() with state variables and stores into output variable
   let output = CalculateOutput(firstValue, secValue, multiplier, tolerance);
 
   return (
@@ -37,17 +37,17 @@ export default function Resistor() {
         <div className={`${styles.pin} ${styles.left}`}></div>
         <div className={styles.main_body}>
           <div className={styles.band_wrapper}>
-            <ColorBand callback={setFirstValue} />
-            <ColorBand callback={setSecValue} />
-            <ColorBand callback={setMultiplier} />
+            <ColorBand callback={setFirstValue} type={"value"} />
+            <ColorBand callback={setSecValue} type={"value"} />
+            <ColorBand callback={setMultiplier} type={"multiplier"} />
             <div className={styles.band_spacer}></div>
-            <ColorBand callback={setTolerance} />
+            <ColorBand callback={setTolerance} type={"tolerance"} />
             <div className={styles.band_stopper}></div>
           </div>
         </div>
         <div className={`${styles.pin} ${styles.right}`}></div>
       </div>
-      <Output out={output} />
+      <Output data={output} />
     </>
   );
 }

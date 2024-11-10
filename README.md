@@ -6,6 +6,6 @@
 
 ## toDo
 
-     create multiplier and tolerance bands
+     format output
 
      3-5-6 band resistor pages

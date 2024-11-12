@@ -9,12 +9,12 @@ interface PropTypes {
   type: string;
 }
 
-// Utilizes callback function prop to pass the current band value back to the parent Resistor component for calculation
+// Utilizes callback function prop to pass the current band value back to the parent Resistor component for calculation. Uses type passed from parent Resistor to display proper color button/values upon hover.
 export default function ColorBand({ callback, type }: PropTypes) {
   // State var to hold currently selected band color. Is updated upon click of a color selection button
   const [bandColor, setBandColor] = useState("black");
 
-  // Define 3 different sets of buttons for base values, multipliers, and tolerances.
+  // Define 3 different sets of buttons for base values, multipliers, and tolerances
   const values = (
     <div className={styles.color_selections}>
       <button
@@ -270,7 +270,7 @@ export default function ColorBand({ callback, type }: PropTypes) {
     </div>
   );
 
-  // Define variable to hold one of the button sets above, dependant on value passed into type prop from Resistor component.
+  // Define variable to hold one of the button sets above, dependant on value passed into type prop from Resistor component
   let bandType = <div></div>;
 
   if (type === "value") {

@@ -24,8 +24,21 @@ export default function Resistor() {
     // Multiplies baseValue by the 3rd bands value (multiplier) for final ohm rating
     let ohmRating = basevalue * mVal;
 
+    // Check whether ohmRating is in the thousands or higher to properly format output string by adding shorthand (K - thousand, M - million, G - billion) and adjusting ohmRating number accordingly
+    let shorthand = "";
+    if (ohmRating > 999 && ohmRating < 1000000) {
+      ohmRating = ohmRating / 1000;
+      shorthand = "K";
+    } else if (ohmRating > 999999 && ohmRating < 1000000000) {
+      ohmRating = ohmRating / 1000000;
+      shorthand = "M";
+    } else if (ohmRating > 999999999) {
+      ohmRating = ohmRating / 1000000000;
+      shorthand = "G";
+    }
+
     // Returns a string with formatted output including ohm rating and tolerance percentage
-    return ohmRating + "ohms " + tVal + "% tolerance";
+    return ohmRating + shorthand + " ohms " + tVal + "% tolerance";
   }
 
   // Calls CalculateOutput() with state variables and stores into output variable
